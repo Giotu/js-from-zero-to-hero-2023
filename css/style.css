@@ -4,7 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #CFCDEB;
+    background: linear-gradient(45deg, #31416D, #23325A);
+    color: #FBFBFC;
 }
 
 * {
@@ -18,17 +19,18 @@ ul {
 }
 
 a {
-    color: #CFCDEB;
+    color: #FBFBFC;
     text-decoration: none;
 }
 
 h1,
+h2,
 p {
     margin: 0;
 }
 
 .header {
-    background-color: black;
+    background-color: #69C480;
     padding: 20px 0;
 }
 
@@ -46,7 +48,10 @@ p {
 .header__link {
     display: block;
     padding: 10px 15px;
-    transition: all 1.2s ease;
+    transition: all .7s ease;
+    color: #23325A;
+    font-size: 24px;
+
 }
 
 .header__link:hover {
@@ -58,7 +63,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     padding: 35px 0;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #FBFBFC;
 }
 
 .section-profile__image {
@@ -72,19 +77,49 @@ p {
     justify-content: space-evenly;
     text-align: center;
     transition: all .5s ease;
-}
-
-.section-profile__text:hover {
-    text-shadow: 3px 3px 3px gray;
+    font-weight: 700;
 }
 
 .section-profile__title {
     font-size: 2.5rem;
-    font-weight: 400;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
+    color: #69C480;
 }
 
 .section-profile__subtitle {
     font-size: 1.5rem;
+    color: white;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px 10px 30px 10px;
+}
+
+.title {
+    padding: 20px 0 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+    color: #F4BF4A;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.item {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.item:last-child {
+    padding-bottom: 0;
 }
