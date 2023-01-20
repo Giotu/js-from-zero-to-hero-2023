@@ -101,6 +101,7 @@ p {
 .section {
     width: calc(50% - 20px);
     padding: 10px 10px 30px 10px;
+    border-bottom: 2px solid wheat;
 }
 
 .title {
@@ -113,6 +114,7 @@ p {
 
 .info {
     font-size: 20px;
+    max-width: 600px;
 }
 
 .item {
@@ -122,4 +124,57 @@ p {
 
 .item:last-child {
     padding-bottom: 0;
+}
+
+.svg {
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+.section-contacts__svg {
+    fill: aliceblue;
+}
+
+.courses__item,
+.languages__item {
+    position: relative;
+    padding-left: 35px;
+}
+
+.courses__item::before {
+    content: '';
+    background-image: url("../img/icons/book-svgrepo-com.svg");
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.languages,
+.education {
+    border-bottom: 0;
+}
+
+.languages__item {
+    position: relative;
+}
+
+.languages__item::before {
+    content: '';
+    background-image: url("../img/icons/language-planet-svgrepo-com.svg");
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #69C480;
+    color: #23325A;
+}
+
+.footer a {
+    color: #23325A;
 }
