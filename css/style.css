@@ -120,10 +120,53 @@ p {
 .item {
     font-size: 20px;
     padding-bottom: 20px;
+    transition: all .7s ease;
 }
 
 .item:last-child {
     padding-bottom: 0;
+}
+
+.item:hover svg {
+    animation-name: svgSection;
+    animation-duration: 1s;
+}
+
+@keyframes svgSection {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.item:hover .section-contacts__link::after {
+    animation: link 1s forwards;
+}
+
+.section-contacts__link {
+    position: relative;
+}
+
+.section-contacts__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    height: 2px;
+    background-color: #69C480;
+}
+
+@keyframes link {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 .svg {
