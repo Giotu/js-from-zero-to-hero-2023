@@ -107,6 +107,11 @@ p {
     width: calc(50% - 20px);
     padding: 10px 10px 30px 10px;
     border-bottom: 2px solid wheat;
+    transition: all .5s ease;
+}
+
+.section:hover {
+    box-shadow: 2px 0px 3px;
 }
 
 .title {
@@ -151,8 +156,17 @@ p {
     animation: link 1s forwards;
 }
 
+.item:hover .section-contacts__link {
+    color: #F4BF4A;
+}
+
+.item:hover .section-contacts__svg {
+    fill: #69C480;
+}
+
 .section-contacts__link {
     position: relative;
+    transition: all 1s ease;
 }
 
 .section-contacts__link::after {
@@ -217,10 +231,14 @@ p {
 }
 
 .footer {
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     background-color: #69C480;
     color: #23325A;
+}
+
+.footer__info {
+    font-size: 1.5rem;
 }
 
 .footer a {
