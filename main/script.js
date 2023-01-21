@@ -9,5 +9,5 @@ btn.addEventListener('click', () => {
 itemMenu.forEach(item => {
     item.addEventListener('click', () => {
         nav.classList.toggle('menu-open');
-    })
+    });
 });

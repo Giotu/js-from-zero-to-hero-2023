@@ -1,3 +1,10 @@
+:root {
+    --navy-blue: #23325A;
+    --light-green: #69C480;
+    --faint-yellow: #F4BF4A;
+    --dark-blue: #31416D;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    background: linear-gradient(45deg, #31416D, #23325A);
+    background: linear-gradient(45deg, var(--dark-blue), var(--navy-blue));
     color: #FBFBFC;
 }
 
@@ -35,7 +42,7 @@ p {
 }
 
 .header {
-    background-color: #69C480;
+    background-color: var(--light-green);
     padding: 20px 0;
 }
 
@@ -54,7 +61,7 @@ p {
     display: block;
     padding: 10px 15px;
     transition: all .7s ease;
-    color: #23325A;
+    color: var(--navy-blue);
     font-size: 1.5rem;
 
 }
@@ -89,7 +96,7 @@ p {
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    color: #69C480;
+    color: var(--light-green);
 }
 
 .section-profile__subtitle {
@@ -119,7 +126,7 @@ p {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
-    color: #F4BF4A;
+    color: var(--faint-yellow);
 }
 
 .info {
@@ -157,11 +164,11 @@ p {
 }
 
 .item:hover .section-contacts__link {
-    color: #F4BF4A;
+    color: var(--faint-yellow);
 }
 
 .item:hover .section-contacts__svg {
-    fill: #69C480;
+    fill: var(--light-green);
 }
 
 .section-contacts__link {
@@ -175,7 +182,7 @@ p {
     left: 0;
     top: 24px;
     height: 2px;
-    background-color: #69C480;
+    background-color: var(--light-green);
 }
 
 @keyframes link {
@@ -233,8 +240,8 @@ p {
 .footer {
     padding: 20px 0;
     text-align: center;
-    background-color: #69C480;
-    color: #23325A;
+    background-color: var(--light-green);
+    color: var(--navy-blue);
 }
 
 .footer__info {
@@ -242,7 +249,7 @@ p {
 }
 
 .footer a {
-    color: #23325A;
+    color: var(--navy-blue);
 }
 
 .header__button {
@@ -264,7 +271,7 @@ p {
         top: 0;
         bottom: 0;
         right: 0;
-        background-color: #69C480;
+        background-color: var(--light-green);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -279,7 +286,7 @@ p {
 
     .header__link {
         font-size: 3em;
-        color: #23325A;
+        color: var(--navy-blue);
     }
 
     .header__button {
@@ -299,7 +306,7 @@ p {
         left: 0;
         width: 100%;
         height: 2px;
-        background-color: #23325A;
+        background-color: var(--navy-blue);
     }
 
     .header__button-line:nth-child(1) {
