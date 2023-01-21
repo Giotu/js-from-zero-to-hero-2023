@@ -324,4 +324,61 @@ p {
     .section-profile__image {
         margin-bottom: 20px;
     }
+
+    .section-profile__title {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    html {
+        font-size: 82%;
+    }
+
+    .about-me,
+    .section-contacts {
+        width: 100%;
+    }
+
+    .section-contacts .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-contacts__item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 77.5%;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .section-contacts {
+        flex-direction: column;
+    }
+
+    .section-contacts__item {
+        width: 100%;
+    }
+
+    .education {
+        border-bottom: 2px solid wheat;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .section-profile__title {
+        font-size: 1.5rem;
+    }
+
+    .section-profile__subtitle {
+        font-size: 1.25rem;
+    }
 }
