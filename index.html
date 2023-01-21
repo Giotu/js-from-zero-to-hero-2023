@@ -18,13 +18,19 @@
         <div class="container">
             <nav class="header__menu">
                 <ul class="header__list">
-                    <li class="header__list-item"><a href="#" class="header__link">Contacts</a></li>
-                    <li class="header__list-item"><a href="#" class="header__link">About Me</a></li>
-                    <li class="header__list-item"><a href="#" class="header__link">Skills</a></li>
-                    <li class="header__list-item"><a href="#" class="header__link">Courses</a></li>
-                    <li class="header__list-item"><a href="#" class="header__link">Education</a></li>
-                    <li class="header__list-item"><a href="#" class="header__link">Languages</a></li>
+                    <li class="header__list-item"><a href="#contacts" class="header__link">Contacts</a></li>
+                    <li class="header__list-item"><a href="#about-me" class="header__link">About Me</a></li>
+                    <li class="header__list-item"><a href="#skills" class="header__link">Skills</a></li>
+                    <li class="header__list-item"><a href="#cources" class="header__link">Courses</a></li>
+                    <li class="header__list-item"><a href="#education" class="header__link">Education</a></li>
+                    <li class="header__list-item"><a href="#languages" class="header__link">Languages</a></li>
                 </ul>
+                <button class="header__button" type="button">
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                </button>
             </nav>
         </div>
     </header>
@@ -38,7 +44,7 @@
                 </div>
             </section>
             <div class="section-wrapper">
-                <section class="section section-contacts">
+                <section id="contacts" class="section section-contacts">
                     <h2 class="title">Contacts</h2>
                     <ul class="list">
                         <li class="item section-contacts__item">
@@ -80,7 +86,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="section about-me">
+                <section id="about-me" class="section about-me">
                     <h2 class="title">About Me</h2>
                     <p class="info">I am 24 years old. I want to try myself in something new. I chose frontend. Now I
                         have a lot of free time, so all efforts
@@ -88,7 +94,7 @@
                         I really want to become a frontend developer.My goal is to learn a pure JavaScript at a good
                         level and learn the popular framework.</p>
                 </section>
-                <section class="section skills">
+                <section id="skills" class="section skills">
                     <h2 class="title">Skills</h2>
                     <ul class="list">
                         <li class="item skills__item">
@@ -161,21 +167,21 @@
                         </li>
                     </ul>
                 </section>
-                <section class="section courses">
+                <section id="cources" class="section courses">
                     <h2 class="title">COURSES</h2>
                     <ul class="list">
-                        <li class="item courses__item">Learn.epam (Software Development Methodologies)</li>
-                        <li class="item courses__item">Learn.epam (Version Control with Git)</li>
+                        <li class="item courses__item">Learn.epam (SDM)</li>
+                        <li class="item courses__item">Learn.epam (Git)</li>
                         <li class="item courses__item">W3SCHOOL (HTML5)</li>
                         <li class="item courses__item">W3SCHOOL (CSS3)</li>
                         <li class="item courses__item">RS School</li>
                     </ul>
                 </section>
-                <section class="section education">
+                <section id="education" class="section education">
                     <h2 class="title">EDUCATION</h2>
                     <p class="info">Baranovichi State University, Information Systems and Technologies, 2017-2021</p>
                 </section>
-                <section class="section languages">
+                <section id="languages" class="section languages">
                     <h2 class="title">languages</h2>
                     <ul class="list">
                         <li class="item languages__item">Russian:
@@ -191,6 +197,7 @@
             <p class="footer__info">&copy; 2023 <a href="https://github.com/Giotu">Giotu</a></p>
         </div>
     </footer>
+    <script src="main/script.js"></script>
 </body>
 
 </html>
